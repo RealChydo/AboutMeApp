@@ -8,23 +8,32 @@
 import UIKit
 
 class LoginViewController: UIViewController {
+    
     @IBOutlet private var userNameTF: UITextField!
     @IBOutlet private var passwordTF: UITextField!
     
-    let userNamePattern = "qwerty"
-    let passwordPattern = "1234"
+    private let user = User.getUser()
+    
+    private let userNamePattern = "qwerty"
+    private let passwordPattern = "1234"
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        userNameTF.text = "qwerty"
-        passwordTF.text = "1234"
+        userNameTF.text = user.login
+        passwordTF.text = user.password
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let welcomeVC = segue.destination as? WelcomeViewController
-        welcomeVC?.userNameText = userNameTF.text
+        if let tabBarController = segue.destination as? UITabBarController {
+            tabBarController.viewControllers?.forEach { viewController in
+                if let firstVC = viewController as? WelcomeViewController {
+                        firstVC.user = user
+                }
+            }
+        }
     }
+    
     
     
     @IBAction private func loginButtonTapped() {

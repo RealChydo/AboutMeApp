@@ -11,7 +11,7 @@ struct User {
     let password: String
     let person: Person
     
-    func getUser() -> User {
+    static func getUser() -> User {
         User(
             userName: "Alexey",
             login: "qwerty",
