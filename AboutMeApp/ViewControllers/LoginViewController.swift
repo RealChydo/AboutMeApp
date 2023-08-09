@@ -16,6 +16,9 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        userNameTF.text = "qwerty"
+        passwordTF.text = "1234"
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
