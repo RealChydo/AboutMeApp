@@ -15,6 +15,8 @@
 		E3A01B222A8021A600236B56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3A01B212A8021A600236B56 /* Assets.xcassets */; };
 		E3A01B252A8021A600236B56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3A01B232A8021A600236B56 /* LaunchScreen.storyboard */; };
 		E3A01B2D2A802E4300236B56 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A01B2C2A802E4300236B56 /* WelcomeViewController.swift */; };
+		E3EA024C2A84397E00BA4848 /* UserCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EA024B2A84397E00BA4848 /* UserCardViewController.swift */; };
+		E3EA024E2A84399100BA4848 /* BioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EA024D2A84399100BA4848 /* BioViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		E3A01B242A8021A600236B56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E3A01B262A8021A600236B56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E3A01B2C2A802E4300236B56 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		E3EA024B2A84397E00BA4848 /* UserCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCardViewController.swift; sourceTree = "<group>"; };
+		E3EA024D2A84399100BA4848 /* BioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +50,8 @@
 			children = (
 				E3A01B1C2A8021A500236B56 /* LoginViewController.swift */,
 				E3A01B2C2A802E4300236B56 /* WelcomeViewController.swift */,
+				E3EA024B2A84397E00BA4848 /* UserCardViewController.swift */,
+				E3EA024D2A84399100BA4848 /* BioViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -176,7 +182,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3EA024E2A84399100BA4848 /* BioViewController.swift in Sources */,
 				E3A01B1D2A8021A500236B56 /* LoginViewController.swift in Sources */,
+				E3EA024C2A84397E00BA4848 /* UserCardViewController.swift in Sources */,
 				E3A01B2D2A802E4300236B56 /* WelcomeViewController.swift in Sources */,
 				E3A01B192A8021A500236B56 /* AppDelegate.swift in Sources */,
 				E30A2E232A84155600739860 /* User.swift in Sources */,
