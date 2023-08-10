@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="pPu-8a-3qN">
-                                <rect key="frame" x="58" y="170" width="259" height="154"/>
+                                <rect key="frame" x="58" y="256.5" width="259" height="154"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hj7-VF-n8F">
                                         <rect key="frame" x="0.0" y="0.0" width="259" height="34"/>
@@ -68,7 +68,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="pPu-8a-3qN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="jcL-lw-qGx"/>
+                            <constraint firstItem="pPu-8a-3qN" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="WGr-9i-s4h"/>
                             <constraint firstItem="pPu-8a-3qN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jsk-92-Vo2"/>
                         </constraints>
                     </view>
@@ -283,6 +283,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="0UU-le-Lu8" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="cvJ-dM-tRc">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>

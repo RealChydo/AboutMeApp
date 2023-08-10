@@ -10,7 +10,13 @@ import UIKit
 final class UserCardViewController: UIViewController {
     
     @IBOutlet private var fullNameLabel: UILabel!
-    @IBOutlet private var imageView: UIImageView!
+    
+    @IBOutlet private var imageView: UIImageView! {
+        didSet {
+            imageView.layer.cornerRadius = imageView.frame.height / 2
+        }
+    }
+    
     @IBOutlet private var nameLabel: UILabel!
     @IBOutlet private var surnameLabel: UILabel!
     @IBOutlet private var companyLabel: UILabel!
@@ -27,9 +33,7 @@ final class UserCardViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        imageView.layer.cornerRadius = imageView.frame.height / 2
-        
-        fullNameLabel.text = user.person.name + " " + user.person.surname
+        fullNameLabel.text = user.person.fullName
         nameLabel.text = "Имя: " + user.person.name
         surnameLabel.text = "Фамилия: " + user.person.surname
         companyLabel.text = "Компания: " + user.person.job.companyName

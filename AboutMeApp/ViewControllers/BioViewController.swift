@@ -17,7 +17,7 @@ class BioViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        fullNameLabel.text = user.person.name + " " + user.person.surname + " Bio"
+        fullNameLabel.text = user.person.fullName + " Bio"
         bioLabel.text = user.person.bio
     }
     

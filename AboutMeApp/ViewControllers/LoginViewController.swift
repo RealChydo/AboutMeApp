@@ -38,11 +38,11 @@ final class LoginViewController: UIViewController {
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
         guard userNameTF.text == user.login, passwordTF.text == user.password else {
             showAllert(
-                    withTitle: "Invalid User Name or password",
-                    andMessage: "Please, check your User Name and password"
-                )
+                withTitle: "Invalid User Name or password",
+                andMessage: "Please, check your User Name and password"
+            )
             return false
-            }
+        }
         return true
     }
     
